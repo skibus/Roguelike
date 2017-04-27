@@ -15,7 +15,10 @@ intro ='''
     ███       ███    ███   ███    ███    ███   ███
    ▄████▀     ███    █▀    █▀     ██████████   ███
    '''
+<<<<<<< HEAD
 print(intro)
+=======
+>>>>>>> dbb76f9e3ef19a0b09ebc3ad16db0f46d59d579b
 
 hall_of_fame ='''
  ▄  █ ██   █    █        ████▄ ▄████     ▄████  ██   █▀▄▀█ ▄███▄
@@ -26,7 +29,10 @@ hall_of_fame ='''
   ▀     █                        ▀         ▀      █    ▀
        ▀                                         ▀
 '''
+<<<<<<< HEAD
 print(hall_of_fame)
+=======
+>>>>>>> dbb76f9e3ef19a0b09ebc3ad16db0f46d59d579b
 
 how_to_play = '''
  ▄ .▄      ▄▄▌ ▐ ▄▌    ▄▄▄▄▄           ▄▄▄·▄▄▌   ▄▄▄· ▄· ▄▌
@@ -35,7 +41,10 @@ how_to_play = '''
 ██▌▐▀▐█▌.▐▌▐█▌██▐█▌     ▐█▌·▐█▌.▐▌    ▐█▪·•▐█▌▐▌▐█ ▪▐▌▐█▀·.
 ▀▀▀ · ▀█▄▀▪ ▀▀▀▀ ▀▪     ▀▀▀  ▀█▄▀▪    .▀   .▀▀▀  ▀  ▀  ▀ •
 '''
+<<<<<<< HEAD
 print(how_to_play)
+=======
+>>>>>>> dbb76f9e3ef19a0b09ebc3ad16db0f46d59d579b
 
 about_us = '''
   ▄████████ ▀█████████▄   ▄██████▄  ███    █▄      ███          ███    █▄     ▄████████
@@ -47,7 +56,10 @@ about_us = '''
   ███    ███   ███    ███ ███    ███ ███    ███     ███          ███    ███    ▄█    ███
   ███    █▀  ▄█████████▀   ▀██████▀  ████████▀     ▄████▀        ████████▀   ▄████████▀
 '''
+<<<<<<< HEAD
 print(about_us)
+=======
+>>>>>>> dbb76f9e3ef19a0b09ebc3ad16db0f46d59d579b
 
 lose = '''
 ▓██   ██▓ ▒█████   █    ██     ▄▄▄       ██▀███  ▓█████     ███▄    █ ▒█████  ▄▄▄█████▓   ▄▄▄█████▓ ██░ ██  ██▓▓█████   █████▒   ▐██▌
@@ -99,6 +111,7 @@ intro ='''
     ███       ███    ███   ███    ███    ███   ███
    ▄████▀     ███    █▀    █▀     ██████████   ███
    '''
+<<<<<<< HEAD
    '''
 
 story = '''In this game we identify with the most wanted thief in Miami. Our goal is to steal artifacts from different places. First stage is quite easy
@@ -111,3 +124,55 @@ def introduce_screen():
     print (story)
 
 introduce_screen()
+=======
+# def introduce_screen():
+#     print (intro)
+#     print
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import os
+
+
+def getch():
+    import sys, tty, termios
+    fd = sys.stdin.fileno()
+    old_settings = termios.tcgetattr(fd)
+    try:
+        tty.setraw(sys.stdin.fileno())
+        ch = sys.stdin.read(1)
+    finally:
+        termios.tcsetattr(fd, termios.TCSADRAIN, old_settings)
+    return ch
+
+x = getch()
+print(x)
+>>>>>>> dbb76f9e3ef19a0b09ebc3ad16db0f46d59d579b
