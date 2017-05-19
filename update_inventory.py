@@ -1,5 +1,5 @@
 
-inventory = {'stamina' : 50, 'dollars' : 0, 'keys' : 0, 'revolver' : 1, 'bullets': 0}
+inventory = {'stamina' : 50, 'dollars' : 0, 'keys' : 0, 'revolver' : 0, 'bullets': 0}
 added_items = []
 
 def display_inventory(inventory):
