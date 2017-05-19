@@ -91,6 +91,7 @@ def set_direction(key_direction):
 
 def handle_zero_level():
     
+    time.sleep(3)
     os.system("clear")
     time_start = time.time()
     
@@ -163,7 +164,7 @@ def handle_first_level():
         if check_next_step(y_current_position + y_direction, x_current_position + x_direction, barriers, board):
             y_current_position, x_current_position = take_next_step(y_current_position, x_current_position, y_direction, x_direction)
 
-        if inventory['dollars'] == 160:
+        if inventory['dollars'] == 170:
             board[8][60] = "∃"
 
         if inventory['stamina'] <= 0:                
@@ -211,7 +212,7 @@ def handle_second_level():
         if check_next_step(y_current_position + y_direction, x_current_position + x_direction, barriers, board):
             y_current_position, x_current_position = take_next_step(y_current_position, x_current_position, y_direction, x_direction)
 
-        if inventory['dollars'] == 10:
+        if inventory['dollars'] == 250:
             board[1][49] = "∃"
 
         if inventory['stamina'] <= 0:                
