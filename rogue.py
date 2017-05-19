@@ -8,7 +8,8 @@ from hot_cold import run_game, game_over
 
 
 def delay_print(s):
-    
+    '''Print letter by letter'''
+
     for c in s:
         sys.stdout.write( '%s' % c )
         sys.stdout.flush()
@@ -16,7 +17,8 @@ def delay_print(s):
 
 
 def open_doors(board, inventory, sign, y_current_position, y_direction, x_current_position, x_direction):
-    
+    '''If hero has key and his position is next to door, remove door'''
+
     if  board[y_current_position + y_direction][x_current_position + x_direction] == sign:
         if inventory['keys'] > 0:
             board[y_current_position + y_direction][x_current_position + x_direction] = " "
@@ -26,7 +28,6 @@ def open_doors(board, inventory, sign, y_current_position, y_direction, x_curren
 
 
 def getch():
-    '''Launches the keys'''
 
     fd = sys.stdin.fileno()
     old_settings = termios.tcgetattr(fd)
@@ -42,7 +43,7 @@ def getch():
 
 
 def take_next_step(y, x, y_next_step, x_next_step):
-    '''Moves main character'''
+    '''Move main character'''
 
     y += y_next_step
     x += x_next_step
@@ -90,7 +91,7 @@ def set_direction(key_direction):
 
 
 def handle_zero_level():
-    
+
     time.sleep(3)
     os.system("clear")
     time_start = time.time()
@@ -261,6 +262,7 @@ def handle_third_level():
             sys.exit()
 
 def main():
+    
     introduce_screen()
     handle_zero_level()
 
